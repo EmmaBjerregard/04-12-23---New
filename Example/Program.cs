@@ -75,20 +75,20 @@ Console.WriteLine("The result of dividing " + x + " by " + y + " is " + (x / y))
 
 
 // Exersice 6
-/*
-int number1, number2, number3;
+
+int num1, num2, num3;
 
 Console.WriteLine("Enter first number: ");
-number1 = Convert.ToInt32(Console.ReadLine());
+num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Enter second number: ");
-number2 = Convert.ToInt32(Console.ReadLine());
+num2 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Enter third number: ");
-number3 = Convert.ToInt32(Console.ReadLine());
+num3 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("The result of " + number1 + ", " + number2 + " and " + number3 + " is " + (number1 * number2 * number3));
-*/
+Console.WriteLine("The result " + num1 + ", " + num2 + " and " + num3 + " is " + (num1 * num2 * num3));
+
 
 
 
@@ -293,7 +293,7 @@ if (coX > 0 && coY > 0){
 
 // Exersice 10
 
-
+/*
 int math;
 int phy;
 int chem;
@@ -319,3 +319,4 @@ if (math >= 65 && phy >= 55 && chem >= 50){
 
 } 
 
+*/
