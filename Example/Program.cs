@@ -75,7 +75,7 @@ Console.WriteLine("The result of dividing " + x + " by " + y + " is " + (x / y))
 
 
 // Exersice 6
-
+/*
 int num1, num2, num3;
 
 Console.WriteLine("Enter first number: ");
@@ -88,7 +88,7 @@ Console.WriteLine("Enter third number: ");
 num3 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("The result " + num1 + ", " + num2 + " and " + num3 + " is " + (num1 * num2 * num3));
-
+*/
 
 
 
@@ -320,3 +320,132 @@ if (math >= 65 && phy >= 55 && chem >= 50){
 } 
 
 */
+
+
+
+//19/12-23
+
+// Exersice 11
+/*
+
+int a, b, c;
+double d, x1, x2;
+
+Console.WriteLine("Enter a: ");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter b: ");
+b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter c: ");
+c = Convert.ToInt32(Console.ReadLine());
+
+d = b * b - 4 * a * c;
+
+if (d == 0){
+    Console.WriteLine("Both roots are equal");
+    x1= -b /(2.0 * a);
+    x2=x1;
+
+    Console.WriteLine("The only root is: {0}", x1);
+
+}else if(d>0){
+    Console.WriteLine("There are two roots");
+    x1 = (-b + Math.Sqrt(d)) / (2 * a);
+    x2 = (-b - Math.Sqrt(d)) / (2 * a);
+
+    Console.WriteLine("The first root is: {0}", x1);
+    Console.WriteLine("The second root is: {0}", x2);
+
+}else{
+    Console.WriteLine("There is no solution");
+}
+
+*/
+
+
+
+// Exersice 12
+/*
+
+using System.Diagnostics;
+using System.Runtime.InteropServices.Marshalling;
+
+int RollNo, Phy, Chem, Comp, Total;
+string Name, Division;
+double Per;
+
+Console.WriteLine("Enter your roll number: ");
+RollNo = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Enter your name: ");
+Name = Console.ReadLine()!;
+
+Console.WriteLine("Input the marks of Physics: ");
+Phy = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Input the marks of Chemistry: ");
+Chem = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Input the marks of computer application: ");
+Comp = Convert.ToInt32(Console.ReadLine());
+
+Total = Phy + Chem + Comp;
+Per = Total / 3;
+
+switch (Per){
+    case > 60:
+        Division = "First";
+        break;
+    case > 48:
+        Division = "Second";
+        break;
+    case > 36:
+        Division = "Pass";
+        break;
+    default:
+        Division = "Fail";
+        break;
+}
+
+Console.WriteLine("Roll No: {0}, Name of studen: {1}", RollNo, Name);
+Console.WriteLine("Marks of Physics: {0} \n Marks in Chemisrty: {1} \n Marks in Computer Application: {2}", Phy, Chem, Comp);
+Console.WriteLine("Total Marks = {0} \n Percentage = {1} \n Division = {2}", Total, Per, Division);
+*/
+
+
+// Exersice 13
+/*
+Temp < 0 then Freezing weather
+Temp 0-10 then Very Cold weather
+Temp 10-20 then Cold weather
+Temp 20-30 then Normal in Temp
+Temp 30-40 then Its Hot
+Temp >=40 then Its Very Hot
+*/
+
+using System.Runtime.CompilerServices;
+
+int temp;
+
+Console.WriteLine("Enter the temperature in celsius: ");
+temp = Convert.ToInt32(Console.ReadLine());
+
+switch (temp){
+    case < 0:
+        Console.WriteLine("You butt be freezing, bring som vanter mit dem fluff ");
+        break;
+    case < 10:
+        Console.WriteLine("It's cold, ask your grandma to knit a sweater and always bring some vanter mit dem fluff");
+        break;
+    case < 20:
+        Console.WriteLine("It can be a bit chilled now, a good idea is to bring a jacket");
+        break;
+    case < 30:
+        Console.WriteLine("It is normale tempearture, but if you are a dane, you would probably die from the heat");
+        break;
+    case < 40:
+        Console.WriteLine("It's getting really hot now;)");
+        break;
+    default:
+        Console.WriteLine("You are dead now, but it's okay, what is life anyway?");
+        break;
+}
