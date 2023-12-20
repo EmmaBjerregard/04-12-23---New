@@ -422,6 +422,7 @@ Temp 30-40 then Its Hot
 Temp >=40 then Its Very Hot
 */
 
+/*
 using System.Runtime.CompilerServices;
 
 int temp;
@@ -449,3 +450,187 @@ switch (temp){
         Console.WriteLine("You are dead now, but it's okay, what is life anyway?");
         break;
 }
+*/
+
+
+// Exersice 14
+/*
+
+int side1, side2, side3;
+
+Console.WriteLine("Enter the leangth of side 1: ");
+side1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Enter the leangth of side 2: ");
+side2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Enter the leangth of side 3: ");
+side3 = Convert.ToInt32(Console.ReadLine());
+
+if (side1 == side2 && side2 == side3){
+    Console.WriteLine("This is an equilateral triangle");
+
+}else if(side1 == side2 || side1 == side2 || side2 == side3){
+    Console.WriteLine("This is an isosceles triangle");
+
+}else{
+    Console.WriteLine("This is a scalene triangle");
+}
+
+*/
+
+
+// Exersice 15
+/*
+
+int angle1, angle2, angle3, sumangle;
+
+Console.WriteLine("Enter the first angle: ");
+angle1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the second angle: ");
+angle2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the third angle: ");
+angle3 = Convert.ToInt32(Console.ReadLine());
+
+sumangle = angle1 + angle2 + angle3;
+
+switch (sumangle){
+    case 180:
+        Console.WriteLine("This is a valid triangle");
+        break;
+    case > 180:
+        Console.WriteLine("This is not a valid triangle");
+        break;
+    case < 180:
+        Console.WriteLine("Thid is not a valid triangle");
+        break;
+
+}
+*/
+
+
+// Exersice 16
+/*
+
+char ch;
+
+Console.WriteLine("Enter a letter: ");
+ch = Convert.ToChar(Console.ReadLine()!);
+
+switch (ch){
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'y':
+        Console.WriteLine("This is a vowel");
+        break;
+    default:
+        Console.WriteLine("This is a consonant");
+        break;
+
+}
+*/
+
+
+// Exersice 17
+/*
+
+int Balance, Withdrwal, Deposit, Newbalance;
+
+Console.WriteLine("Enter your balance: ");
+Balance = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter your withdrwal: ");
+Withdrwal = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter your deposit: ");
+Deposit = Convert.ToInt32(Console.ReadLine());
+
+Newbalance = Balance - Withdrwal + Deposit;
+
+switch (Newbalance){
+    case < 0:
+        Console.WriteLine("Your new balance is: " + Newbalance);
+        break;
+    case > 0:
+        Console.WriteLine("Your new balance is: " + Newbalance);
+        break;
+    default:
+        Console.WriteLine("Your new balance is: " + Newbalance);
+        break;
+}
+
+*/
+
+
+
+// Exersice 18
+/*
+
+String customerName;
+int UnitConsumed, customerID;
+double TotalAmount, charge;
+
+Console.WriteLine("Enter your name: ");
+customerName = Console.ReadLine()!;
+
+Console.WriteLine("Enter your ID: ");
+customerID = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Enter the amount of units consumed: ");
+UnitConsumed = Convert.ToInt32(Console.ReadLine());
+
+switch (UnitConsumed){
+    case < 199:
+        charge = (UnitConsumed * 1.20);
+        Console.WriteLine("ID: " + customerID + " Amount charged [0]", charge);
+        break;
+    case < 400:
+        charge = (UnitConsumed * 1.50);
+        Console.WriteLine("ID: " + customerID + " Amount charged [0]", charge);
+        break;
+
+}
+
+*/
+
+
+
+// Exersice 20
+/*
+
+int day;
+
+Console.WriteLine("Enter the the day number (1-7, mon-sun):");
+day = Convert.ToInt32(Console.ReadLine());
+
+switch (day){
+    case 1:
+        Console.WriteLine("Day number {0} is monday", day);
+        break;
+
+    case 2:
+        Console.WriteLine("Day number {0} is tuesday", day);
+        break;  
+    
+    case 3:
+        Console.WriteLine("Day number {0} is wednesday", day);
+        break;
+
+    case 4:
+        Console.WriteLine("Day number {0} is thursday", day);
+        break;
+    
+    case 5:
+        Console.WriteLine("Day number {0} is friday", day);
+        break;
+
+    case 6:
+        Console.WriteLine("Day number {0} is saturday", day);
+        break;
+
+    case 7: 
+        Console.WriteLine("Day number {0} is sunday", day);
+        break;
+}
+*/
