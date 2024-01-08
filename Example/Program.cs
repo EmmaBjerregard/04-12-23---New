@@ -634,3 +634,34 @@ switch (day){
         break;
 }
 */
+
+
+//Excersice: 
+
+
+
+
+
+//Exersice: Presentation
+/*
+
+int t;
+int j, i;
+
+    Console.WriteLine("Enter a number between 1-10: ");
+    t = Convert.ToInt32(Console.ReadLine());
+
+    if (t<=10){
+
+        for (i = 1; i <= t; i++){
+            for (j = 1; j <= i; j++)
+            {
+                Console.Write("* ");
+            }
+            Console.WriteLine();
+        }
+    }else{
+        Console.WriteLine("The number is not valid");
+    }
+
+*/
